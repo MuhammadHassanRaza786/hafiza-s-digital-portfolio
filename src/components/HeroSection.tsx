@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Download, FolderOpen } from "lucide-react";
+import { FolderOpen, Mail } from "lucide-react";
 
 const typingTexts = [
   "React",
@@ -39,8 +39,9 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }} />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/3 rounded-full blur-[100px] animate-pulse" style={{ animationDelay: "2s" }} />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,hsl(var(--background))_70%)]" />
       </div>
 
@@ -72,7 +73,7 @@ const HeroSection = () => {
           className="text-lg text-muted-foreground/80 mb-4 animate-fade-up max-w-2xl mx-auto"
           style={{ animationDelay: "0.7s" }}
         >
-          Building scalable, high-performance web experiences
+          I build scalable, high-performance web applications that handle real-world traffic and deliver measurable impact.
         </p>
 
         <div
@@ -101,8 +102,8 @@ const HeroSection = () => {
             href="#contact"
             className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl font-medium glass text-foreground hover:bg-secondary transition-all duration-300 hover:scale-105"
           >
-            <Download size={18} />
-            Download CV
+            <Mail size={18} />
+            Contact Me
           </a>
         </div>
       </div>

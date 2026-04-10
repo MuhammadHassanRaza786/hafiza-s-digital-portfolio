@@ -29,7 +29,6 @@ const ContactSection = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12">
-          {/* Info */}
           <div
             className={`space-y-6 transition-all duration-700 delay-200 ${
               isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"
@@ -40,17 +39,17 @@ const ContactSection = () => {
               or just connecting with fellow engineers.
             </p>
             <div className="space-y-4">
-              <a href="mailto:samaramohsin@gmail.com" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors">
+              <a href="mailto:samaramohsin4005617@gmail.com" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors">
                 <Mail size={18} className="text-primary" />
-                samaramohsin@gmail.com
+                samaramohsin4005617@gmail.com
               </a>
-              <a href="https://linkedin.com/in/samara-mohsin" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://www.linkedin.com/in/hafiza-samara-mohsin/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors">
                 <Linkedin size={18} className="text-primary" />
-                linkedin.com/in/samara-mohsin
+                linkedin.com/in/hafiza-samara-mohsin
               </a>
-              <a href="https://github.com/samaramohsin" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://github.com/h-samara-mohsin" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors">
                 <Github size={18} className="text-primary" />
-                github.com/samaramohsin
+                github.com/h-samara-mohsin
               </a>
               <div className="flex items-center gap-3 text-muted-foreground">
                 <MapPin size={18} className="text-primary" />
@@ -59,7 +58,6 @@ const ContactSection = () => {
             </div>
           </div>
 
-          {/* Form */}
           <form
             onSubmit={handleSubmit}
             className={`glass rounded-xl p-6 space-y-5 transition-all duration-700 delay-300 ${

@@ -7,13 +7,13 @@ const Footer = () => (
         Built with ❤️ using modern web technologies
       </p>
       <div className="flex items-center gap-4">
-        <a href="https://github.com/samaramohsin" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+        <a href="https://github.com/h-samara-mohsin" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
           <Github size={18} />
         </a>
-        <a href="https://linkedin.com/in/samara-mohsin" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+        <a href="https://www.linkedin.com/in/hafiza-samara-mohsin/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
           <Linkedin size={18} />
         </a>
-        <a href="mailto:samaramohsin@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+        <a href="mailto:samaramohsin4005617@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
           <Mail size={18} />
         </a>
       </div>
