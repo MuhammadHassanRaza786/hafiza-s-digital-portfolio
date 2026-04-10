@@ -99,7 +99,7 @@ const ProjectsSection = () => {
                 </div>
 
                 {project.award && (
-                  <div className="inline-flex items-center gap-1 text-xs font-medium text-amber-400 bg-amber-400/10 rounded-full px-2.5 py-1 mb-3">
+                  <div className="inline-flex items-center gap-1 text-xs font-medium text-accent bg-accent/10 rounded-full px-2.5 py-1 mb-3">
                     <Trophy size={12} />
                     Runner-up
                   </div>

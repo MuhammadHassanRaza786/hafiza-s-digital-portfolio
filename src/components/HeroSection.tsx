@@ -47,7 +47,7 @@ const HeroSection = () => {
       <div className="container relative z-10 mx-auto px-6 text-center">
         <div className="animate-fade-up" style={{ animationDelay: "0.2s" }}>
           <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-2 text-sm text-muted-foreground mb-8">
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+            <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
             Available for opportunities
           </div>
         </div>
