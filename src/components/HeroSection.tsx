@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ArrowDown, Download, FolderOpen } from "lucide-react";
+import { Download, FolderOpen } from "lucide-react";
 
 const typingTexts = [
   "React",
@@ -105,13 +105,6 @@ const HeroSection = () => {
             Download CV
           </a>
         </div>
-
-        <a
-          href="#about"
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 text-muted-foreground hover:text-primary transition-colors animate-bounce"
-        >
-          <ArrowDown size={24} />
-        </a>
       </div>
     </section>
   );
