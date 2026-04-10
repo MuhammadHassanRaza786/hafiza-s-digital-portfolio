@@ -1,5 +1,5 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { ExternalLink, Trophy } from "lucide-react";
+import { ExternalLink, Trophy, Bot, Brain } from "lucide-react";
 
 const projects = [
   {
@@ -12,40 +12,37 @@ const projects = [
   {
     title: "Datalyzer — Real-time Dashboard",
     tech: ["React", "GraphQL", "APIs"],
-    impact: ["30% faster alert response time", "35% faster page load speed"],
+    impact: ["30% faster alert response time", "35% faster page load speed", "28% reduced bundle size"],
     featured: true,
     link: "https://www.datalyzer.pk/",
   },
   {
+    title: "BotX — AI Chatbot",
+    tech: ["React", "Python", "OpenAI"],
+    impact: ["🏆 Runner-up project", "Behavior-based AI responses", "Context-aware conversation"],
+    featured: true,
+    award: true,
+    icon: Bot,
+  },
+  {
+    title: "Qatari Avatar AI Model",
+    tech: ["AI", "Real-time Audio", "Lip-sync"],
+    impact: ["Domain-specific knowledge responses", "Real-time lip-syncing & audio", "Human-like AI communication"],
+    featured: true,
+    icon: Brain,
+    subtitle: "Bank Alfalah Project",
+  },
+  {
     title: "Applicant Tracking System",
     tech: ["React", "Spring Boot", "PostgreSQL"],
-    impact: ["Hiring workflow automation", "Full candidate management pipeline"],
+    impact: ["Hiring workflow automation", "Candidate tracking system", "Multi-user collaboration"],
     featured: false,
   },
   {
     title: "LMS Platform",
     tech: ["React"],
-    impact: ["Course management UI", "API-based dynamic content rendering"],
+    impact: ["Course management UI", "API-driven dynamic rendering"],
     featured: false,
-  },
-  {
-    title: "BotX — AI Chatbot",
-    tech: ["React", "Python", "OpenAI"],
-    impact: ["🏆 Runner-up project", "Behavior-based AI responses"],
-    featured: false,
-    award: true,
-  },
-  {
-    title: "Resort Medspa",
-    tech: ["WordPress"],
-    impact: ["Full website design & development"],
-    link: "https://theresortmedspa.com/",
-  },
-  {
-    title: "AMR Consultancy",
-    tech: ["WordPress"],
-    impact: ["Business consultancy website"],
-    link: "https://consultamr.com/",
   },
 ];
 
@@ -75,7 +72,7 @@ const ProjectsSection = () => {
               key={project.title}
               className={`group glass rounded-xl overflow-hidden glow-card transition-all duration-700 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-              } ${project.featured ? "md:col-span-1 lg:col-span-1" : ""}`}
+              }`}
               style={{ transitionDelay: `${i * 100}ms` }}
             >
               {/* Gradient top bar */}
@@ -83,19 +80,27 @@ const ProjectsSection = () => {
 
               <div className="p-6">
                 <div className="flex items-start justify-between mb-3">
-                  <h3 className="font-heading text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
-                    {project.title}
-                  </h3>
-                  {project.link && (
-                    <a
-                      href={project.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-muted-foreground hover:text-primary transition-colors shrink-0 ml-2"
-                    >
-                      <ExternalLink size={16} />
-                    </a>
-                  )}
+                  <div>
+                    <h3 className="font-heading text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
+                      {project.title}
+                    </h3>
+                    {project.subtitle && (
+                      <p className="text-xs text-muted-foreground mt-0.5">{project.subtitle}</p>
+                    )}
+                  </div>
+                  <div className="flex items-center gap-2 shrink-0 ml-2">
+                    {project.icon && <project.icon size={16} className="text-accent" />}
+                    {project.link && (
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        <ExternalLink size={16} />
+                      </a>
+                    )}
+                  </div>
                 </div>
 
                 {project.award && (
